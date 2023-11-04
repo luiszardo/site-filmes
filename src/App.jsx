@@ -9,11 +9,12 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 const GlobalStyle = createGlobalStyle`
 *{margin:0;
 padding:0;
+box-sizing: border-box;
 }
 `;
 const Header = styled.header`
 /* border:solid red; */
-width: 105%;
+width: 100%;
 `
 const PrimeiraSessao = styled.section`
   display: flex;
