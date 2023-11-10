@@ -5,6 +5,10 @@ const SessaoInfantil = styled.section`
   height: 100vh;
   width: 100%;
   background-color: red;
+  @media (max-width:750px){
+    width: 100%;
+    height:158vh;
+  }
 `;
 
 const TituloPrincipal = styled.h1`
@@ -25,6 +29,18 @@ const PrimeiraDiv = styled.div`
     border: solid blue;
     border-radius: 15px;
   }
+  @media (max-width:750px) {
+    width: 100%;
+    height: 70vh;
+    flex-direction: column;
+    align-items: center;
+
+    iframe{
+      width: 35vw;
+      height: 20vh;
+    
+    }
+  }
 `;
 const SegundaDiv = styled.div`
   display: flex;
@@ -36,6 +52,18 @@ const SegundaDiv = styled.div`
   iframe {
     border: solid blue;
     border-radius: 15px;
+  }
+  @media (max-width:750px) {
+    width: 100%;
+    height: 70vh;
+    flex-direction: column;
+    align-items: center;
+
+    iframe{
+      width: 35vw;
+      height: 20vh;
+    
+    }
   }
 `;
 function Infantil() {

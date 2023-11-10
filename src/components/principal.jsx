@@ -24,6 +24,12 @@ const PrimeiraDiv = styled.div`
     border: solid purple;
     border-radius: 15px;
   }
+  @media (max-width:750px){
+    iframe{
+      width: 35vw;
+      height: 25vh;
+    }
+  }
 `;
 const SegundaDiv = styled.div`
   display: flex;
@@ -34,6 +40,12 @@ const SegundaDiv = styled.div`
   iframe {
     border: solid purple;
     border-radius: 15px;
+  }
+  @media (max-width:750px){
+    iframe{
+      width: 70vw;
+      height: 45vh;
+    }
   }
 `;
 

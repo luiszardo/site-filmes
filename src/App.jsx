@@ -15,6 +15,12 @@ box-sizing: border-box;
 const Header = styled.header`
 /* border:solid red; */
 width: 100%;
+
+@media (max-width:750px){
+  width:100%;
+
+}
+
 `
 const PrimeiraSessao = styled.section`
   display: flex;
@@ -37,21 +43,39 @@ const Figure = styled.figure`
   h1 {
     color: #ffffff;
   }
+@media (max-width:750px){
+  width: 50vw;
+}
+  
 `;
+const Navegacao = styled.nav`
+width: 100%;
+`
+
 const Ul = styled.ul`
   /* border: solid red; */
-  width: 50vw;
+  width: 100%;
   display: flex;
   justify-content: space-evenly;
-  margin-left: 600px;
+  justify-content: flex-end;
+
 `;
 
 const Li = styled(Link)`
+  width: 13vw;
   list-style: none;
   color: #ffffff;
   font-size: 23px;
   text-decoration: none;
   color: white;
+  &:hover{
+    transform: scale(110%);
+    color: red;
+  }
+  @media (max-width:750px){
+   width:16vw ;
+}
+
 `;
 function App() {
   // const [count, setCount] = useState(0)
@@ -67,7 +91,7 @@ function App() {
           <h1>Zardo Filmes</h1>
         </Figure>
         <BrowserRouter>
-          <nav>
+          <Navegacao>
             <Ul>
               <Li>
                 <Li to="/">Home</Li>
@@ -82,7 +106,7 @@ function App() {
                 <Li to="/terror">Terror</Li>
               </Li>
             </Ul>
-          </nav>
+          </Navegacao>
           <Routes>
             <Route path="/" element={<Principal />} />
             <Route path="/acao" element={<Acao />} />
